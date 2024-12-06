@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dipositivos diferentes ou simplesmente aumente e diminua io tamanho do seu navegador.</p>
+
+    <picture>
+        <!--Sempre começar da menor imagem para a maior, conforme abaixo. Atenção a colocar 50px a mais para que nao forme a barra na hora de trocar a imagem no navegador. Obs: o "media" sempre virá com (min-whith), alterá-lo para MAX.   -->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" 
+        alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio no HTML5. </p>
+    <audio src="midea/kazoomquincasmoreira.mp3"  controls autoplay ></audio>
+    <!--pode ser que o navegador não seja compatível com o formato MP3. Os formatos geralmente aceitos são: MP3, WAV, OGG-->
+    
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midea/kazoomquincasmoreira.mp3" type="audio/mpeg">
+        <source src="midea/kazoomquincasmoreira.ogg" type="audio/ogg">
+        <source src="midea/kazoomquincasmoreira.mp3" type="audio/wav"><!--Evitar são arquivos pesados-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midea/kazoomquincasmoreira.mp3"></a></p>
+       </audio>
+    
+       
+
+
+    
+    
+</body>
+</html>

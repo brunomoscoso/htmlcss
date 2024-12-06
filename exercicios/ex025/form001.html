@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--Caso eu queira retirar o preenchimento automático da caixa do formulário , basta inserir dentro de <form autocomplete="off">-->
+    <form action="cadastro.php"><!--action função para onde as informações do meu cadastro serão encaminhadas, nesse momento ainda não aprendemos o PHP ou qualquer outra linguagem, mas será enviado para onde eu comandar-->
+
+    <!--Para que a caixa texto, por exemplo, esteja ligada ao <p>Nome, precisamos indicar a partir de name e id, pois caso não coloque o navegador não irá entender que existe uma relação direta. Para fazer essa ligação nós utilizamos os labels, etiquetas. Por exemplo, para a liguagem PHP e HTML funcuionar corretamente precisamos que todo o input, objeto de entrada, tenha um nome. Para  linguagens como JavaScript o id é m ais importante-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></p> <!--value indica a palavra que vai estar dentro do botão-->
+    </form>
+</body>
+</html>

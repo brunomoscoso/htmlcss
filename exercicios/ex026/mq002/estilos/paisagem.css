@@ -1,0 +1,9 @@
+@charset "UTF-08";
+
+/*Aparelho deitado (lanscape)*/
+
+body{
+    background-image:url(../imagem/cev-landscape.jpg);
+    background-position: left bottom;
+}
+

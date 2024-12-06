@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas absoluttas
+            cm, mm, in(polegada), px, pt, pc
+            
+               Medidas relativas  
+               em (tamanho atual da fonte, altura do M maiúsculo)
+               ex (altura x de uma fonte)
+               rem
+               vw
+               vh
+               %
+               obs: recomendação da W3C usar o px ou em.
+               16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+
+            /* weight (peso), widht (largura), heigth(altura)*/
+
+        }
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: normal;
+            /* shorthand font (condesar todas as configurações)
+            porém tem que seguir uma ordem:
+            -fonte-style -> font-weigth -> font-size -> font-family */
+
+            font: normal bolder 3m 'Courier New', Courier, monospace; /* shorthand font*/
+        }
+
+        h2 {
+
+            font: bold 2em 'Courier New';/* shorthand font*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto rem aperiam, at ducimus sequi, unde sunt similique corporis illo nobis, quos pariatur vero voluptate. Voluptatum tempore numquam temporibus. Commodi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem placeat veritatis delectus. Aperiam odio ratione tempore esse consequatur asperiores est quas pariatur dolores soluta quaerat, omnis iusto, eligendi voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aliquam! Aut quae est eligendi illo et alias quasi dolorum tempora rerum consequuntur omnis architecto, expedita, qui nihil officiis reprehenderit doloribus!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia quae rerum autem cupiditate, nisi quasi error temporibus non itaque a molestiae ratione asperiores, sit id pariatur reprehenderit iste similique?</p>
+</body>
+</html>

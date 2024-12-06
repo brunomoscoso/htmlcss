@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body{
+
+            height: 100vh;
+            /*background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; (amplia e diminui de acordo com o tamanho da tela)
+            background-attachment: fixed;*/
+
+             /*Shorthand - background
+                color > image > position > (size) > attachemnt
+
+                Atenção: apesar da regra incluir o cover na shorthand o cover não responde o comando, com isso colocaremos ela de maneira independente conforme abaixo.
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        main{
+            background-color: white;
+            max-width: 400px; /* espreme o conteúdo para caber em diferente telas sem quebrar */
+            padding: 10px; /*espaço interno*/
+            margin: auto; /*alinha no meio do site*/
+            border: 1px solid darkblue;
+            border-radius: 15px;
+                }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et earum cupiditate excepturi veritatis praesentium at recusandae tempore, autem quod minima, similique consectetur in est officiis doloribus eveniet velit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et, enim illo magnam, ex reprehenderit saepe dicta quam natus fugit temporibus tempore odit earum vitae praesentium, facilis adipisci veritatis rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias inventore molestiae veritatis, ipsa dolore dolores minima sapiente deleniti laborum cumque natus! Neque voluptas quae maxime consequatur eligendi reiciendis ab eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et earum cupiditate excepturi veritatis praesentium at recusandae tempore, autem quod minima, similique consectetur in est officiis doloribus eveniet velit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et, enim illo magnam, ex reprehenderit saepe dicta quam natus fugit temporibus tempore odit earum vitae praesentium, facilis adipisci veritatis rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias inventore molestiae veritatis, ipsa dolore dolores minima sapiente deleniti laborum cumque natus! Neque voluptas quae maxime consequatur eligendi reiciendis ab eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et earum cupiditate excepturi veritatis praesentium at recusandae tempore, autem quod minima, similique consectetur in est officiis doloribus eveniet velit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et, enim illo magnam, ex reprehenderit saepe dicta quam natus fugit temporibus tempore odit earum vitae praesentium, facilis adipisci veritatis rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias inventore molestiae veritatis, ipsa dolore dolores minima sapiente deleniti laborum cumque natus! Neque voluptas quae maxime consequatur eligendi reiciendis ab eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et earum cupiditate excepturi veritatis praesentium at recusandae tempore, autem quod minima, similique consectetur in est officiis doloribus eveniet velit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et, enim illo magnam, ex reprehenderit saepe dicta quam natus fugit temporibus tempore odit earum vitae praesentium, facilis adipisci veritatis rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias inventore molestiae veritatis, ipsa dolore dolores minima sapiente deleniti laborum cumque natus! Neque voluptas quae maxime consequatur eligendi reiciendis ab eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et earum cupiditate excepturi veritatis praesentium at recusandae tempore, autem quod minima, similique consectetur in est officiis doloribus eveniet velit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et, enim illo magnam, ex reprehenderit saepe dicta quam natus fugit temporibus tempore odit earum vitae praesentium, facilis adipisci veritatis rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias inventore molestiae veritatis, ipsa dolore dolores minima sapiente deleniti laborum cumque natus! Neque voluptas quae maxime consequatur eligendi reiciendis ab eveniet.</p>
+    </main>
+    
+</body>
+</html>
